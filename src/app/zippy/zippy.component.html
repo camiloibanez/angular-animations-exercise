@@ -1,0 +1,15 @@
+<div class="zippy">
+    <div class="zippy-header" [class.open]="isOpen" (click)="onClick()">
+        {{ title }}
+        <i class="bi"
+            [ngClass]="{
+                'bi-chevron-up': isOpen,
+                'bi-chevron-down': !isOpen
+            }"></i>
+    </div>
+    <div 
+        [@expandCollapse]="isOpen ? 'expanded' : 'collapsed'"
+        class="zippy-body">
+        <ng-content></ng-content>
+    </div>
+</div>

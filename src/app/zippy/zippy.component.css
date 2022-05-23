@@ -1,0 +1,23 @@
+.zippy {
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.zippy-header {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    padding: 25px;
+    cursor: pointer;
+}
+
+.zippy-body {
+    padding: 25px;
+}
+
+.open {
+    background-color: #f0f0f0;
+}
+.bi {
+    float: right;
+}
